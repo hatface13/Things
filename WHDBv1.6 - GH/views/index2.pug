@@ -1,0 +1,50 @@
+doctype html
+html
+  head
+    title whdb dev
+    link(rel='Stylesheet', type='text/css', href='styles/global.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='scripts/main.js')
+  body
+    #headerRow
+      h1#H1.headers Loads|Door|Quad
+      h1#H2.headers Loads|Door|Quad
+      h1#H3.headers Loads|Door|Quad
+      h1#H4.headers Loads|Door|Quad
+      h1#H5.headers Loads|Door|Quad
+    .wrapper
+        .textboxs
+            form.leftform(action='/write', method='post')
+            input.tb1.tbleft.red(type='text', name='loads')
+            input.tb1.tbcenter.red(type='text', name='door')
+            input.tb1.tbcenter.red(type='text', name='quad')
+            input#btn1.btn3(type='button', value='Ready')
+            input#sb1.btn(type='submit', value='Submit')
+        div
+            form.leftform(action='/write', method='post')
+            input.tb1.tbleft.red(type='text', name='loads')
+            input.tb1.tbcenter.red(type='text', name='door')
+            input.tb1.tbcenter.red(type='text', name='quad')
+            span
+            input#btn1.btn3(type='button', value='Ready')
+            input#sb1.btn(type='submit', value='Submit')
+        div
+        div
+        div
+        div
+        div
+        div
+        div
+        div
+        div
+        div
+        div
+        div
+        
+
+    form(action='/get', method='post', name='getForm')
+      input#sb2.btn2(type='submit', value='Pull')    
+    input#reset.btn2(type='button', value='Reset')
+//    form(action='/get', method='post', name='getForm')
+//      input#sb2.btn2(type='submit', value='Pull')
+//    #dv1

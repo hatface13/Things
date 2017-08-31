@@ -1,0 +1,86 @@
+body{
+    background-color: darkslategrey;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns:repeat(9, 1fr);
+    grid-gap: 1em;
+}
+.wrapper > div{
+    background:#eee;
+    padding: 1em;
+}
+.wrapper > div:nth-child(odd){
+    background:#bbb;
+}
+
+/* Column header stylings */
+.headers{
+    background-color:darkslategray;
+    display:inline-block;
+    padding-left:73px;
+    
+}
+#headerRow{
+    background-color: darkslategray;
+}
+#H1{
+    margin-right:44px;
+}
+#H2{
+    margin-right:42px;
+    
+}
+#H3{
+    margin-right:44px;
+}
+#H4{
+    margin-right:44px;
+}
+
+
+/* Button and textbox stylings */
+
+span {
+    display: inline-block; 
+    background: #6af; 
+    vertical-align: top;
+    float: left
+}
+.leftform{
+    width:20%;
+    float:left
+}
+.btn2{
+    font-size: 28px;
+    width: 325px;
+    background-color:lightgray;
+    margin-top: 1%
+}
+.btn3{
+    
+}
+.textboxes{
+    width:400px;
+}
+.tbleft{
+    font-size: 36px;
+    width: 36%;
+    color:white;
+    margin-top:.5%
+}
+.tbcenter{
+    font-size: 36px;
+    width: 20%;
+    color:white;
+    margin-top:.5%
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color:dodgerblue;
+}
