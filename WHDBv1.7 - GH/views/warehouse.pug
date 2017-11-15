@@ -1,0 +1,21 @@
+doctype
+
+html
+    head
+        title Warehouse Page
+        link(rel='Stylesheet', type='text/css', href='styles/warehouse.css')
+    body
+        .wrapper
+          - for (var i = 0; i < 54; i++) {
+            div
+                -if (loads[i]){
+                h1= loads[i].loads
+                p= loads[i].door
+                p= loads[i].quad
+                -} else {
+                h1 NA
+                p NA
+                p NA
+                -}
+            -}
+

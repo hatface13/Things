@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title whdb dev
+    link(rel='Stylesheet', type='text/css', href='styles/global.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='scripts/main.js')
+  body
+    #headerRow
+      h1#H1.headers Loads|Door|Quad
+      h1#H2.headers Loads|Door|Quad
+      h1#H3.headers Loads|Door|Quad
+      h1#H4.headers Loads|Door|Quad
+      h1#H5.headers Loads|Door|Quad
+    - for (var i = 1; i < 54; i++) {
+    .textboxs
+      form.leftform(action='/write', method='post')
+        input.tbleft.red(class='tb'+[i], type='text', name='loads')
+        input.tbcenter.red(class='tb'+[i], type='text', name='door')
+        input.tbcenter.red(class='tb'+[i], type='text', name='quad')
+        span(style='display: inline-block; background: #6af; vertical-align: top;')
+            input.btn3(id='btn'+[i], type='button', value='Ready')
+            input#sb1.btn(type='submit', value='Submit')
+    -}
+    form(action='/get', method='get', name='getForm')
+      input#sb2.btn2(type='submit', value='Pull')
+    input#reset.btn2(type='button', value='Reset')
+
+//    form(action='/get', method='post', name='getForm')
+//      input#sb2.btn2(type='submit', value='Pull')
+//    #dv1
